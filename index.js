@@ -39,4 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //list and input field are empty when page loads
 //typed item should apper in the input field afer pressing enter or clicking add button
-//functionality must be attached to a form submit even
+//functionality must be attached to a form submit event
+//add todo item - item must be a button element in an li
+//item clicked in todo list to mark as done - use strikethrough to represent done
+//done item is removed from list
