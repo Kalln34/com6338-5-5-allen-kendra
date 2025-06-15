@@ -6,22 +6,22 @@ document.addEventListener('DOMContentLoaded', function() {
   form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    var taskText = input.value.trim(); // Remove spaces before/after
+    var taskText = input.value.trim(); 
 
     if (taskText === '') {
-      return; // Don't add empty or space-only todos
+      return; 
     }
 
     var li = document.createElement('li');
     var button = document.createElement('button');
     button.textContent = taskText;
 
-    // Track strike-through state
+    
     var isDone = false;
 
     button.addEventListener('click', function() {
       if (isDone) {
-        li.remove(); // Remove if already done
+        li.remove(); 
       } else {
         button.style.textDecoration = 'line-through';
         isDone = true;
