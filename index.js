@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var input = form.querySelector('input');
   var todoList = document.getElementById('todo-list');
 
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
 
     var taskText = input.value.trim(); 
 
@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var button = document.createElement('button');
     button.textContent = taskText;
 
-    
     var isDone = false;
 
     button.addEventListener('click', function() {
